@@ -9,5 +9,4 @@ public class MotoAutoPlannerApplication {
     public static void main(String[] args) {
         SpringApplication.run(MotoAutoPlannerApplication.class, args);
     }
-
 }
