@@ -1,3 +1,8 @@
 # Planner for auto and moto
 
-Application for support and repair anything vehicle
+Application with microservice architecture application.
+
+Used technologies:
+1. Spring Boot
+
+To will be added late..
