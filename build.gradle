@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.4.2'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.21'
+    implementation group: 'org.telegram', name: 'telegrambots', version: '5.7.0'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: '2.7.0'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.7.0'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.7.0'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
