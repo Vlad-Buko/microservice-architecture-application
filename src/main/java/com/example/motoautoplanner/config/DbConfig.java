@@ -18,21 +18,21 @@ import javax.sql.DataSource;
 public class DbConfig extends DefaultDbConfig {
 
     @Bean
-    @Qualifier("demo")
-    @ConfigurationProperties(prefix = "app.db.demo")
-    SpringDataJdbcProperties demoJdbcProperties() {
+    @Qualifier("bot-db")
+    @ConfigurationProperties(prefix = "app.db.bot-db")
+    SpringDataJdbcProperties gitlabJdbcProperties() {
         return new SpringDataJdbcProperties();
     }
 
     @Bean
-    @Qualifier("demo")
-    public DataSource demoDataSource(@Qualifier("demo") SpringDataJdbcProperties properties) {
+    @Qualifier("bot-db")
+    public DataSource gitlabDataSource(@Qualifier("bot-db") SpringDataJdbcProperties properties) {
         return hikariDataSource("db", properties);
     }
 
     @Bean
-    @Qualifier("demo")
-    JdbcTemplate demoJdbcTemplate(@Qualifier("demo") DataSource dataSource) {
+    @Qualifier("bot-db")
+    JdbcTemplate gitlabJdbcTemplate(@Qualifier("bot-db") DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
 
@@ -131,4 +131,5 @@ public class DbConfig extends DefaultDbConfig {
         }
 
     }
+
 }
