@@ -9,4 +9,4 @@ Used technologies:
 4. PostgreSQL
 5. JUnit 
 
-To will be added late..
+
