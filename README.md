@@ -1,4 +1,4 @@
-# Planner for auto and moto
+# Planner for auto and moto (in dev)
 
 Application with microservice architecture application.
 
