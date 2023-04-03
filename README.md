@@ -8,5 +8,6 @@ Used technologies:
 3. Spring Context
 4. PostgreSQL
 5. JUnit 
+6. FlyWay
 
 
