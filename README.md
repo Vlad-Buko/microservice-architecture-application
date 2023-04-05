@@ -9,5 +9,5 @@ Used technologies:
 4. PostgreSQL
 5. JUnit 
 6. FlyWay
-
+7. PostgreSQL
 
